@@ -1,0 +1,49 @@
+.message {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.message h1 {
+  font-size: 2.5rem;
+  color: #ff4da6;
+  margin-bottom: 15px;
+  text-shadow: 0 0 15px rgba(255, 77, 166, 0.8);
+}
+
+.message p {
+  font-size: 1rem;
+  color: #ffffffcc;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* typing cursor */
+#typing-text::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* 📱 MOBILE FIX */
+@media (max-width: 600px) {
+  .message h1 {
+    font-size: 1.8rem;
+  }
+
+  .message p {
+    font-size: 0.9rem;
+  }
+}
+
+/* darker pink vibe */
+:root {
+  --dark-color: #050005;
+}
